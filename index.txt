@@ -1,0 +1,28 @@
+Shortest Path with Single-Use Teleports
+
+You are given an m x n grid of characters grid where:
+- '.' represents an empty cell,
+- '#' represents an obstacle,
+- 'A' to 'Z' represent teleport portals.
+
+You start at the top-left cell (0, 0) and want to reach the bottom-right cell (m - 1, n - 1).
+
+In one move, you may move to an adjacent cell (up, down, left, right) if it is within bounds and not an obstacle.
+
+Teleport rule:
+- If you step onto a portal cell containing letter X, you may instantly teleport to any other cell that also contains letter X.
+- Teleporting costs 0 moves.
+- Each portal letter (A–Z) can be used for teleporting at most once during the entire path.
+
+Return the minimum number of moves required to reach (m - 1, n - 1).
+If it is impossible, return -1.
+
+Constraints:
+- 1 <= m, n <= 100
+- grid[i][j] is '.', '#', or an uppercase English letter ('A' to 'Z')
+- grid[0][0] != '#'
+- grid[m - 1][n - 1] != '#'
+- 0 <= number of distinct portal letters in grid <= 15
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
