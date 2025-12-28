@@ -26,3 +26,40 @@ Constraints:
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Cost optimization
+
+You are given a square grid Dir of size N × N. Every cell contains one uppercase
+direction letter from {L, R, U, D}. From any cell, you may move to one of its
+four neighboring cells (up, down, left, right) as long as you stay inside the
+grid.
+
+Cost of a move:
+• If Dir[i][j] = L, then moving left from (i, j) to (i, j−1) costs 0; moving in
+  any other valid direction costs 1.
+• If Dir[i][j] = R, then moving right from (i, j) to (i, j+1) costs 0; moving in
+  any other valid direction costs 1.
+• If Dir[i][j] = U, then moving up from (i, j) to (i−1, j) costs 0; moving in
+  any other valid direction costs 1.
+• If Dir[i][j] = D, then moving down from (i, j) to (i+1, j) costs 0; moving in
+  any other valid direction costs 1.
+
+You are also given a start cell (Sx, Sy) and a destination cell (Dx, Dy). Your
+task is to compute the minimum total cost needed to travel from the start cell
+to the destination cell.
+
+Input format:
+• The first line contains an integer N, the dimension of the grid.
+• The next N lines each contain N space-separated characters (L/R/U/D) forming
+  the Dir matrix.
+• The next line contains two space-separated integers Sx Sy (start cell).
+• The next line contains two space-separated integers Dx Dy (destination cell).
+
+Output format:
+• Print one integer: the minimum cost to reach (Dx, Dy) from (Sx, Sy).
+
+Constraints:
+• 1 ≤ N ≤ 3 × 10^3
+• 1 ≤ Sx, Sy, Dx, Dy ≤ N
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
