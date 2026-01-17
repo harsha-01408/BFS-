@@ -63,3 +63,33 @@ Constraints:
 • 1 ≤ Sx, Sy, Dx, Dy ≤ N
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Problem Description
+A network of m roads connects N cities (numbered from 1 to N). There may be more than one road connecting one city with another. Some of the roads are paid. There are two ways to pay for travel on a paid road i from city ai to city bi:
+
+1) Pay in advance, in a city ci (which may or may not be the same as ai).
+2) Pay after the travel, in the city bi.
+
+The payment is Pi in the first case and Ri in the second case.
+
+Rule:
+When you travel along road i (ai -> bi):
+- If your route has visited city ci at some point BEFORE taking this road, you may pay Pi.
+- Otherwise, you must pay Ri.
+
+Task:
+Find the minimum possible total cost to travel from city 1 to city N.
+If it is impossible to reach city N from city 1, output:
+impossible
+
+Input Format
+- The first line contains two integers N and m.
+- Each of the next m lines contains five integers:
+  ai bi ci Pi Ri
+
+Output Format
+- Print the minimum total cost from city 1 to city N.
+- If no valid trip exists, print:
+  impossible
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
