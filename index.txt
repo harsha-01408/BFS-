@@ -93,3 +93,17 @@ Output Format
   impossible
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+You are given an undirected graph with N nodes and M edges.
+All edges have weight 1.
+
+There is a special node V. Any edge that touches V has weight 0.
+All other edges keep weight 1.
+
+Given a source node S, compute the shortest distance from S to every node.
+
+Output an array dist of length N:
+- dist[i] is the shortest distance from S to node (i+1)
+- if node (i+1) is unreachable, dist[i] = -1
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
