@@ -107,3 +107,18 @@ Output an array dist of length N:
 - if node (i+1) is unreachable, dist[i] = -1
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+You have g_nodes Uber hubs labeled 1..g_nodes. The network is a complete undirected graph,
+meaning you can connect every pair of hubs.
+
+Some connections require a paid infrastructure upgrade (cost = 1). These paid connections are
+given as g_edges pairs: (g_from[i], g_to[i]). Every other possible pair of hubs can be connected
+for free (cost = 0).
+
+Your task is to choose a set of connections so that all hubs become connected (there is a path
+between every pair of hubs), while minimizing the total upgrade cost.
+
+Return the minimum total cost. If the network is already connected using only free connections,
+the answer is 0.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
