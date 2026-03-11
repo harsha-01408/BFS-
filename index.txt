@@ -122,3 +122,57 @@ Return the minimum total cost. If the network is already connected using only fr
 the answer is 0.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+You are given a string target and two positive integers x and y.
+
+Start with a value cur = 0.
+In one operation, you may do either of the following:
+- set cur = cur + x
+- set cur = cur + y
+
+Each time you reach a new value, append its decimal representation to a string s.
+
+Your task is to generate a string s such that target is a subsequence of s.
+
+Return the smallest possible valid string s.
+Among all valid strings:
+1. choose the one with minimum length
+2. if multiple strings have the same length, return the lexicographically smallest one
+
+If it is impossible, return "-1".
+
+A string a is a subsequence of string b if a can be obtained by deleting some characters from b without changing the order of the remaining characters.
+
+Example 1:
+Input: target = "27", x = 2, y = 3
+Output: "247"
+
+Explanation:
+One possible sequence of values is:
+0 -> 2 -> 4 -> 7
+
+This generates the string "247", and "27" is a subsequence of "247".
+
+Another possible sequence is:
+0 -> 2 -> 5 -> 7
+
+This generates the string "257", and "27" is also a subsequence of "257".
+
+Both strings are valid and have the same length, but "247" is lexicographically smaller, so the answer is "247".
+
+Example 2:
+Input: target = "2710", x = 2, y = 3
+Output: "24710"
+
+Explanation:
+A valid sequence is:
+0 -> 2 -> 4 -> 7 -> 10
+
+This generates the string "24710", and "2710" is a subsequence of it.
+
+Constraints:
+- 1 <= target.length <= 100
+- target consists only of digits
+- 1 <= x, y <= 10^9
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
