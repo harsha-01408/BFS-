@@ -176,3 +176,54 @@ Constraints:
 - 1 <= x, y <= 10^9
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+You are given an n x m grid maze where:
+
+- maze[i][j] = 0 means the cell is empty
+- maze[i][j] = 1 means the cell is blocked
+
+You start at the top-left cell (0, 0) and want to reach the bottom-right cell (n - 1, m - 1).
+
+You are also given an integer k.
+
+In one move, from a cell (i, j), you may move in exactly one of the four directions:
+
+- up
+- down
+- left
+- right
+
+and travel any distance from 1 to k cells in that direction.
+
+A move is valid only if:
+
+- every cell passed through is inside the grid
+- every cell passed through is empty
+- the destination cell is also empty
+
+You are not allowed to jump over blocked cells.
+
+Return the minimum number of moves needed to reach (n - 1, m - 1).
+
+If it is impossible to reach the destination, return -1.
+
+Example 1:
+Input: maze = [[0,0,0],[1,0,0]], k = 5
+Output: 2
+Explanation:
+One optimal path is:
+(0,0) -> (0,2) -> (1,2)
+
+Example 2:
+Input: maze = [[0,1],[0,0]], k = 1
+Output: 2
+Explanation:
+One optimal path is:
+(0,0) -> (1,0) -> (1,1)
+
+Constraints:
+- 1 <= n, m <= 100
+- 1 <= k <= 100
+- maze[i][j] is either 0 or 1
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
